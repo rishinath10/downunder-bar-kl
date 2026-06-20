@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Downunder Bar KL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+
+  <!-- Login Wrapper -->
+  <div class="login-wrapper" id="login-section">
+    <div class="login-card">
+      <div class="login-header">
+        <div class="login-logo-wrap">
+          <img src="/images/logo.png" alt="Downunder Bar KL Logo" class="admin-logo-img">
+        </div>
+        <p class="login-subtitle">Dashboard Authentication Required</p>
+      </div>
+      <form id="admin-login-form">
+        <div class="form-group">
+          <label for="admin-password">Enter Admin Password</label>
+          <input type="password" id="admin-password" placeholder="••••••••" required autofocus>
+        </div>
+        <button type="submit" class="btn-primary btn-full">Unlock Dashboard</button>
+        <div class="login-error hidden" id="login-error-msg">Incorrect password. Please try again.</div>
+      </form>
+      <div class="login-footer">
+        <a href="/" class="back-link">← Return to Live Website</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dashboard Main Panel (Hidden by default until logged in) -->
+  <div class="dashboard-wrapper hidden" id="dashboard-section">
+    
+    <!-- Sidebar -->
+    <aside class="db-sidebar">
+      <div class="sidebar-header">
+        <div class="db-logo-wrap">
+          <img src="/images/logo.png" alt="Downunder Bar KL Logo" class="admin-logo-img">
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active" data-tab="feature">
+          <span class="nav-icon">🏈</span> DUBKL Match Day
+        </a>
+        <a href="#" class="nav-item" data-tab="tracker">
+          <span class="nav-icon">📅</span> Stadium Tracker
+        </a>
+        <a href="#" class="nav-item" data-tab="promotions">
+          <span class="nav-icon">🍔</span> Promotions (Tucker & Beers)
+        </a>
+        <a href="#" class="nav-item" data-tab="events">
+          <span class="nav-icon">🎉</span> Events Calendar
+        </a>
+        <a href="#" class="nav-item" data-tab="gallery">
+          <span class="nav-icon">📸</span> Gallery Manager
+        </a>
+        <a href="#" class="nav-item" data-tab="bookings">
+          <span class="nav-icon">🛎️</span> Guest Bookings
+          <span class="booking-badge hidden" id="bookings-count-badge">0</span>
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <button class="btn-logout" id="btn-admin-logout">Log Out</button>
+        <a href="/" class="live-site-link">View Live Website ↗</a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="db-content">
+      
+      <!-- Top Action Bar -->
+      <header class="db-topbar">
+        <h2 class="page-title" id="db-active-tab-title">DUBKL Match Day</h2>
+        <div class="admin-profile">
+          <span class="profile-avatar">🛡️</span>
+          <span class="profile-role">Site Administrator</span>
+        </div>
+      </header>
+
+      <!-- TAB CONTENTS -->
+      <div class="tab-viewport">
+        
+        <!-- Tonight's Feature Tab -->
+        <section class="tab-content" id="tab-feature">
+          <div class="card-glass">
+            <h3 class="card-title">Manage Featured Match</h3>
+            <p class="card-desc">Configure the details of the match showcased at the top of the homepage hero banner.</p>
+            
+            <form id="form-feature" class="admin-form">
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label for="feat-home">Home Team</label>
+                  <input type="text" id="feat-home" required placeholder="e.g. PANTHERS">
+                </div>
+                <div class="form-group">
+                  <label for="feat-away">Away Team</label>
+                  <input type="text" id="feat-away" required placeholder="e.g. BRONCOS">
+                </div>
+              </div>
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label for="feat-home-score">Home Score</label>
+                  <input type="number" id="feat-home-score" min="0" required placeholder="18">
+                </div>
+                <div class="form-group">
+                  <label for="feat-away-score">Away Score</label>
+                  <input type="number" id="feat-away-score" min="0" required placeholder="12">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="feat-status">Match Status/Description</label>
+                <input type="text" id="feat-status" required placeholder="e.g. DUBKL MATCH DAY, Starts 20:00, LIVE - Q2">
+              </div>
+              
+              <div class="form-actions">
+                <button type="submit" class="btn-primary">Update Featured Match</button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- Stadium Tracker Tab -->
+        <section class="tab-content hidden" id="tab-tracker">
+          <div class="action-header">
+            <p class="tab-subtitle">Schedule matches showing in the Stadium Tracker schedule block.</p>
+            <button class="btn-primary btn-sm" id="btn-add-match">+ Add New Match</button>
+          </div>
+          
+          <div class="table-container">
+            <table class="db-table">
+              <thead>
+                <tr>
+                  <th>Sport</th>
+                  <th>Matchup</th>
+                  <th>Time / Schedule</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="tracker-table-body">
+                <!-- Dynamically loaded -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Promotions Tab -->
+        <section class="tab-content hidden" id="tab-promotions">
+          <div class="action-header">
+            <p class="tab-subtitle">Manage food items (The Tucker) and drinks (Cold Brews, Cocktails, Wines).</p>
+            <button class="btn-primary btn-sm" id="btn-add-promo">+ Add New Promotion</button>
+          </div>
+          
+          <div class="table-container">
+            <table class="db-table">
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Category</th>
+                  <th>Title</th>
+                  <th>Description</th>
+                  <th>Price</th>
+                  <th>Featured</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="promotions-table-body">
+                <!-- Dynamically loaded -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Events Tab -->
+        <section class="tab-content hidden" id="tab-events">
+          <div class="card-glass">
+            <h3 class="card-title">Calendar Event Settings</h3>
+            <p class="card-desc">Configure the active calendar event listed in the home page banner (e.g. Trivia Night).</p>
+            
+            <form id="form-event" class="admin-form">
+              <div class="form-grid-3">
+                <div class="form-group">
+                  <label for="event-title">Event Title</label>
+                  <input type="text" id="event-title" required placeholder="e.g. TRIVIA NIGHT">
+                </div>
+                <div class="form-group">
+                  <label for="event-day">Day Highlight</label>
+                  <input type="text" id="event-day" required placeholder="e.g. WED, SAT">
+                </div>
+                <div class="form-group">
+                  <label for="event-time">Time</label>
+                  <input type="text" id="event-time" required placeholder="e.g. 8:00 PM Sharp">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="event-desc">Event Details / Prize info</label>
+                <input type="text" id="event-desc" required placeholder="e.g. RM 500 GRAND PRIZE">
+              </div>
+              
+              <div class="form-group">
+                <label for="event-image-file">Update Event Photo (Optional)</label>
+                <input type="file" id="event-image-file" accept="image/*">
+                <div class="image-upload-preview hidden" id="event-preview-wrap">
+                  <img src="" alt="Preview" id="event-img-preview">
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn-primary">Save Event Settings</button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- Gallery Manager Tab -->
+        <section class="tab-content hidden" id="tab-gallery">
+          <div class="action-header">
+            <p class="tab-subtitle">Upload new photos or delete outdated gallery items.</p>
+            <button class="btn-primary btn-sm" id="btn-add-gallery">+ Upload New Photo</button>
+          </div>
+          
+          <div class="admin-gallery-grid" id="admin-gallery-list">
+            <!-- Dynamically populated -->
+          </div>
+        </section>
+
+        <!-- Guest Bookings Tab -->
+        <section class="tab-content hidden" id="tab-bookings">
+          <div class="action-header">
+            <p class="tab-subtitle">Manage guest reservation requests submitted via the table booking form.</p>
+            <button class="btn-outline btn-sm" id="btn-clear-bookings" style="border-color: var(--accent-red); color: var(--accent-red);">Clear All Bookings</button>
+          </div>
+          
+          <div class="table-container">
+            <table class="db-table">
+              <thead>
+                <tr>
+                  <th>Booking ID</th>
+                  <th>Guest Name</th>
+                  <th>Contact Info</th>
+                  <th>Date & Time</th>
+                  <th>Party Size</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="bookings-table-body">
+                <!-- Dynamically loaded -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- POPUP MODALS -->
+
+  <!-- 1. Match Modal (Add/Edit) -->
+  <div class="modal-wrapper hidden" id="modal-match">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="match-modal-title">Add New Match</h3>
+        <span class="modal-close" id="match-modal-close">&times;</span>
+      </div>
+      <form id="form-match" class="admin-form">
+        <input type="hidden" id="match-id">
+        <div class="form-group">
+          <label for="match-sport">Sport League</label>
+          <select id="match-sport" required>
+            <option value="AFL">AFL (Aussie Rules)</option>
+            <option value="NRL">NRL (Rugby League)</option>
+            <option value="EPL">EPL (Premier League)</option>
+            <option value="Formula 1">Formula 1</option>
+            <option value="Cricket">Cricket</option>
+            <option value="Basketball">Basketball</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="match-teams">Teams / Event Description</label>
+          <input type="text" id="match-teams" required placeholder="e.g. Richmond vs Collingwood">
+        </div>
+        <div class="form-group">
+          <label for="match-time">Date / Running Time</label>
+          <input type="text" id="match-time" required placeholder="e.g. Q3 14:02, Starts 19:00, Sun 00:30">
+        </div>
+        <div class="form-group">
+          <label for="match-status">Display Status</label>
+          <select id="match-status" required>
+            <option value="LIVE">LIVE (Green flashing dot)</option>
+            <option value="UPCOMING">UPCOMING</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary btn-full" id="btn-save-match">Save Match Details</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. Promotion Modal (Add/Edit) -->
+  <div class="modal-wrapper hidden" id="modal-promo">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="promo-modal-title">Add Promotion</h3>
+        <span class="modal-close" id="promo-modal-close">&times;</span>
+      </div>
+      <form id="form-promo" class="admin-form">
+        <input type="hidden" id="promo-id">
+        <div class="form-group">
+          <label for="promo-category">Category</label>
+          <select id="promo-category" required>
+            <option value="The Tucker">The Tucker (Food Classics)</option>
+            <option value="Cold Brews">Cold Brews (On Tap List)</option>
+            <option value="Cocktails">Cocktails (Craft Mixology)</option>
+            <option value="Wines">Wines (Southern Grapes)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="promo-title">Title / Item Name</label>
+          <input type="text" id="promo-title" required placeholder="e.g. Aussie Wagyu Burger">
+        </div>
+        <div class="form-group">
+          <label for="promo-price">Price Tag</label>
+          <input type="text" id="promo-price" required placeholder="e.g. RM 48.00">
+        </div>
+        <div class="form-group">
+          <label for="promo-desc">Description</label>
+          <textarea id="promo-desc" rows="3" required placeholder="Brief description of ingredients or draft beer type..."></textarea>
+        </div>
+        
+        <!-- Only for Food Category -->
+        <div class="form-group" id="promo-image-group">
+          <label for="promo-image-file">Image Upload (Required for The Tucker)</label>
+          <input type="file" id="promo-image-file" accept="image/*">
+          <div class="image-upload-preview hidden" id="promo-preview-wrap">
+            <img src="" alt="Preview" id="promo-img-preview">
+          </div>
+        </div>
+
+        <div class="form-group row-checkbox">
+          <input type="checkbox" id="promo-featured">
+          <label for="promo-featured">Feature this item on homepage</label>
+        </div>
+
+        <button type="submit" class="btn-primary btn-full" id="btn-save-promo">Save Promotion</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 3. Gallery Modal (Add) -->
+  <div class="modal-wrapper hidden" id="modal-gallery">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Upload Arena Photo</h3>
+        <span class="modal-close" id="gallery-modal-close">&times;</span>
+      </div>
+      <form id="form-gallery" class="admin-form">
+        <div class="form-group">
+          <label for="gallery-caption">Photo Caption</label>
+          <input type="text" id="gallery-caption" required placeholder="e.g. Friday Night Stadium crowds">
+        </div>
+        <div class="form-group">
+          <label for="gallery-image-file">Select Photo</label>
+          <input type="file" id="gallery-image-file" accept="image/*" required>
+          <div class="image-upload-preview hidden" id="gallery-preview-wrap">
+            <img src="" alt="Preview" id="gallery-img-preview">
+          </div>
+        </div>
+        <button type="submit" class="btn-primary btn-full" id="btn-save-gallery">Upload to Gallery</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Global Action Notification Toast -->
+  <div class="toast-notification hidden" id="db-toast">Success message!</div>
+
+  <!-- Main scripts -->
+  <script src="/js/admin.js"></script>
+</body>
+</html>

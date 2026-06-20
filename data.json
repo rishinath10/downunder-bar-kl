@@ -1,0 +1,266 @@
+{
+  "tonight_feature": {
+    "homeTeam": "DSAFDV",
+    "awayTeam": "BRONCOS",
+    "homeScore": "18",
+    "awayScore": "12",
+    "status": "DUBKL MATCH DAY"
+  },
+  "stadium_tracker": [
+    {
+      "id": 1,
+      "sport": "AFL",
+      "match": "Richmond vs Collingwood",
+      "time": "Q3 14:02",
+      "status": "LIVE"
+    },
+    {
+      "id": 2,
+      "sport": "NRL",
+      "match": "Roosters vs Rabbitohs",
+      "time": "Starts 19:00",
+      "status": "UPCOMING"
+    },
+    {
+      "id": 3,
+      "sport": "EPL",
+      "match": "Man City vs Arsenal",
+      "time": "Sun 00:30",
+      "status": "UPCOMING"
+    }
+  ],
+  "promotions": [
+    {
+      "id": 1,
+      "category": "The Tucker",
+      "title": "Aussie Burger",
+      "description": "This beast of a burger is stacked high – double beef patties, melted cheddar, grilled pineapple, egg, crispy bacon, lettuce, tomato, and our signature smoky BBQ sauce. Accept the mountain challenge.",
+      "price": "RM 48.00",
+      "image": "/images/wagyu_burger.png",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "category": "Cold Brews",
+      "title": "Victoria Bitter",
+      "description": "Classic Australian lager.",
+      "price": "RM 24.00",
+      "image": "/images/vb_beer.png",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "category": "Cold Brews",
+      "title": "Coopers Pale",
+      "description": "Naturally conditioned pale ale.",
+      "price": "RM 26.00",
+      "image": "/images/coopers_beer.png",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "category": "Cold Brews",
+      "title": "Little Creatures",
+      "description": "Fruity and aromatic pale ale.",
+      "price": "RM 32.00",
+      "image": "/images/little_creatures_beer.png",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "category": "The Tucker",
+      "title": "Better Than Bunnings! (Sausage on Barbies)",
+      "description": "A juicy pork sausage seared on the hot-plate and served on buttered bread with caramelized onions, mustard, and tomato sauce. Available Friday, Saturday & Sunday afternoons!",
+      "price": "RM 15.00",
+      "image": "/images/bunnings_sausage.png",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "category": "The Tucker",
+      "title": "Wedges",
+      "description": "Coated wedges with garlic aioli on the side.",
+      "price": "RM 15.00",
+      "image": "/images/wedges.png",
+      "featured": false
+    },
+    {
+      "id": 7,
+      "category": "The Tucker",
+      "title": "Aussie Chicken Parma",
+      "description": "Breaded chicken cutlet topped with chicken ham, cheesy sauce and tomato coulis, served with fries and salad.",
+      "price": "RM 37.50",
+      "image": "/images/chicken_parma.png",
+      "featured": false
+    },
+    {
+      "id": 8,
+      "category": "The Tucker",
+      "title": "Fish and Chips",
+      "description": "Tempura sea bass fillet served with fries, salad and tartar sauce.",
+      "price": "RM 35.90",
+      "image": "/images/fish_chips.png",
+      "featured": false
+    },
+    {
+      "id": 9,
+      "category": "Cocktails",
+      "title": "Downunder Espresso Martini",
+      "description": "A rich premium mix of vodka, Kahlua, and a fresh shot of espresso, shaken to perfection with a thick crema top.",
+      "price": "RM 38.00",
+      "image": "/images/espresso_martini.png",
+      "featured": false
+    },
+    {
+      "id": 10,
+      "category": "Cocktails",
+      "title": "Kiwi Mojito",
+      "description": "A refreshing tropical blend of white rum, fresh kiwi fruit, mint leaves, lime juice, and a splash of soda.",
+      "price": "RM 35.00",
+      "image": "/images/kiwi_mojito.png",
+      "featured": false
+    },
+    {
+      "id": 11,
+      "category": "Cocktails",
+      "title": "Aperol Spritz",
+      "description": "The ultimate sunshine cocktail. Aperol, sparkling Prosecco, soda, garnished with a fresh orange slice.",
+      "price": "RM 36.00",
+      "image": "/images/aperol_spritz.png",
+      "featured": false
+    },
+    {
+      "id": 12,
+      "category": "Wines",
+      "title": "Barossa Valley Shiraz",
+      "description": "A bold, rich Australian red wine featuring dark berry notes, pepper spice, and a velvety smooth finish.",
+      "price": "RM 32 / Glass, RM 160 / Bt",
+      "image": "/images/shiraz_wine.png",
+      "featured": false
+    },
+    {
+      "id": 13,
+      "category": "Wines",
+      "title": "Marlborough Sauvignon Blanc",
+      "description": "A crisp, vibrant New Zealand white wine with bright aromas of passionfruit, citrus, and fresh herbs.",
+      "price": "RM 30 / Glass, RM 150 / Bt",
+      "image": "/images/sauvignon_blanc.png",
+      "featured": false
+    },
+    {
+      "id": 14,
+      "category": "The Tucker",
+      "title": "Pie and Chups",
+      "description": "Homemade Beef and Onion Pie served with golden fries (chups) and our mouth-twisting side salad. Oarsome. Only at DUBKL.",
+      "price": "RM 42.00",
+      "image": "/images/meat_pie.png",
+      "featured": false
+    },
+    {
+      "id": 15,
+      "category": "The Tucker",
+      "title": "French Fries",
+      "description": "Golden crispy fries with Cajun spice and garlic aioli on the side.",
+      "price": "RM 15.00",
+      "image": "/images/french_fries.png",
+      "featured": false
+    },
+    {
+      "id": 16,
+      "category": "The Tucker",
+      "title": "Messy Fries",
+      "description": "Golden fries topped with your choice of BEEF or CHICKEN and cheese.",
+      "price": "RM 26.90",
+      "image": "/images/messy_fries.png",
+      "featured": false
+    },
+    {
+      "id": 17,
+      "category": "The Tucker",
+      "title": "Nachos",
+      "description": "Crispy corn tortillas topped with your choice of BEEF or CHICKEN, with melted cheese and tomato salsa. A hearty snack!",
+      "price": "RM 28.90",
+      "image": "/images/nachos.png",
+      "featured": false
+    },
+    {
+      "id": 18,
+      "category": "The Tucker",
+      "title": "Chicken Wings (6 pieces)",
+      "description": "Choice of Smoky BBQ or crispy tempura with garlic aioli.",
+      "price": "RM 21.90",
+      "image": "/images/chicken_wings.png",
+      "featured": false
+    },
+    {
+      "id": 19,
+      "category": "The Tucker",
+      "title": "Mushroom Burger",
+      "description": "Double BBQ beef patties with sauteed mushrooms and cheddar cheese.",
+      "price": "RM 35.90",
+      "image": "/images/mushroom_burger.png",
+      "featured": false
+    },
+    {
+      "id": 20,
+      "category": "The Tucker",
+      "title": "Kiwi Burger",
+      "description": "Straight outta your corner fish and chip shop! Double beef patties, cheddar cheese, salad, egg and beetroot.",
+      "price": "RM 37.90",
+      "image": "/images/kiwi_burger.png",
+      "featured": false
+    },
+    {
+      "id": 21,
+      "category": "The Tucker",
+      "title": "Grilled Chicken Chop",
+      "description": "Smokey BBQ boneless chicken leg with savoury sauce.",
+      "price": "RM 29.90",
+      "image": "/images/chicken_chop.png",
+      "featured": false
+    },
+    {
+      "id": 22,
+      "category": "The Tucker",
+      "title": "Grilled Lamb Chop",
+      "description": "Aussie lamb shoulder served with wedges, side salad and minty sauce.",
+      "price": "RM 45.90",
+      "image": "/images/lamb_chop.png",
+      "featured": false
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Trivia Night",
+      "day": "WED",
+      "time": "8:00 PM Sharp",
+      "description": "RM 500 GRAND PRIZE",
+      "image": "/images/trivia_night.png",
+      "ctaText": "REGISTER TEAM"
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "url": "/images/hero_bar.png",
+      "caption": "The Ultimate Sports Arena atmosphere"
+    },
+    {
+      "id": 2,
+      "url": "/images/wagyu_burger.png",
+      "caption": "The Aussie Wagyu Burger - Double beet & fried egg"
+    },
+    {
+      "id": 3,
+      "url": "/images/precision_pour.png",
+      "caption": "Precision in every pour - 2°C optimal draft system"
+    },
+    {
+      "id": 4,
+      "url": "/images/trivia_night.png",
+      "caption": "Weekly Trivia Night - Register your squad!"
+    }
+  ],
+  "bookings": []
+}

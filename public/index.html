@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downunder Bar KL | The Ultimate Sports Arena</title>
+  <!-- SEO Tags -->
+  <meta name="description" content="Experience the grit of AFL, NRL, and EPL in the heart of Kuala Lumpur. Premium sports bar with cold craft beer, gourmet wagyu burgers, weekly trivia, and live sports screening.">
+  <meta name="keywords" content="sports bar kl, draft beer changkat, live sports kuala lumpur, rugby screening, premier league bar, wagyu burger, downunder bar">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main>
+    <!-- Orange Yellow Header Bar with Centered Logo -->
+    <header class="site-header-logo-bar">
+      <div class="header-logo-wrap">
+        <img src="/images/logo.png" alt="Downunder Bar KL Logo" class="header-logo-img">
+      </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="section-container" style="position: relative;">
+        <!-- Floating Persistent Mascots -->
+        <div class="hero-persistent-mascots">
+          <img src="/images/kangaroo_mascot.png" alt="Kangaroo Mascot" class="persistent-mascot kangaroo-persistent">
+          <img src="/images/kiwi_mascot.png" alt="Kiwi Mascot" class="persistent-mascot kiwi-persistent">
+        </div>
+
+        <div class="hero-slider-wrapper">
+          <div class="hero-slider-container" id="hero-slider">
+            
+            <!-- Slide 1: FIFA World Cup -->
+            <div class="hero-slide active" style="background-image: linear-gradient(rgba(7, 22, 44, 0.85), rgba(7, 22, 44, 0.75)), url('/images/hero_flags_bg.jpg');">
+              <div class="hero-slide-content">
+                <h2 class="hero-new-title">#DUBKL</h2>
+                <h3 class="hero-new-subtitle">DOWNUNDER BAR KL</h3>
+                <p class="hero-new-desc">
+                  Aussie & Kiwi Cocktail and Sports Bar. Changkat's premier arena for AFL, NRL, EPL, and the FIFA World Cup 2026 screening live.
+                </p>
+                <div class="hero-new-ctas">
+                  <div class="hero-cta-buttons">
+                    <a href="#fifa-schedule" class="btn-fifa">FIFA WORLD CUP MATCHES</a>
+                    <a href="#contact" class="btn-gold">BOOK NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2: Bar Atmosphere -->
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(7, 22, 44, 0.8), rgba(7, 22, 44, 0.7)), url('/images/hero_bar_flags.png');">
+              <div class="hero-slide-content">
+                <h2 class="hero-new-title">THE ARENA</h2>
+                <h3 class="hero-new-subtitle">CHANGKAT'S BEST SPORTS ATMOSPHERE</h3>
+                <p class="hero-new-desc">
+                  Immerse yourself in live crowd commentary on giant HD screens with full stadium audio and roaring fan vibes.
+                </p>
+                <div class="hero-new-ctas">
+                  <div class="hero-cta-buttons">
+                    <a href="#gallery" class="btn-fifa">Explore The Vibe</a>
+                    <a href="#contact" class="btn-gold">BOOK NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Aussie Tucker -->
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(7, 22, 44, 0.82), rgba(7, 22, 44, 0.72)), url('/images/wagyu_burger.png');">
+              <div class="hero-slide-content">
+                <h2 class="hero-new-title">AUSSIE TUCKER</h2>
+                <h3 class="hero-new-subtitle">LEGENDARY BACKYARD PUB GRUB</h3>
+                <p class="hero-new-desc">
+                  Savor our mouth-watering signature Aussie Wagyu Burger, seared pork sausages, beer-battered fish and chips, and fresh-baked pies.
+                </p>
+                <div class="hero-new-ctas">
+                  <div class="hero-cta-buttons">
+                    <a href="#menu" class="btn-fifa">View Food Menu</a>
+                    <a href="#contact" class="btn-gold">BOOK NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4: Ice Cold Beers -->
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(7, 22, 44, 0.8), rgba(7, 22, 44, 0.7)), url('/images/precision_pour.png');">
+              <div class="hero-slide-content">
+                <h2 class="hero-new-title">COLD BREWS</h2>
+                <h3 class="hero-new-subtitle">12 PREMIUM DRAFTS ON TAP</h3>
+                <p class="hero-new-desc">
+                  Enjoy Victoria Bitter, Coopers Pale, Little Creatures, Carlsberg, and 1664 Blanc chilled to an optimal 2°C for the perfect pour.
+                </p>
+                <div class="hero-new-ctas">
+                  <div class="hero-cta-buttons">
+                    <a href="#menu" class="btn-fifa">View Drinks Menu</a>
+                    <a href="#contact" class="btn-gold">BOOK NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Slider Controls -->
+          <button class="hero-slider-btn prev-btn" id="hero-prev-btn" aria-label="Previous Slide">❮</button>
+          <button class="hero-slider-btn next-btn" id="hero-next-btn" aria-label="Next Slide">❯</button>
+
+          <!-- Slider Dots -->
+          <div class="hero-slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Animated Tagline Bar -->
+    <div class="animated-tagline-bar">
+      <div class="ticker-wrap">
+        <div class="ticker-track">
+          <div class="ticker-item"><span class="accent-gold">🦘</span> Aussie & Kiwi Sports and Cocktail Bar <span class="accent-gold">🥝</span></div>
+          <div class="ticker-separator">★</div>
+          <div class="ticker-item"><span class="accent-red">🏉</span> Live AFL & NRL Screenings <span class="accent-red">⚽</span></div>
+          <div class="ticker-separator">★</div>
+          <div class="ticker-item"><span class="accent-gold">🍹</span> Crafted Cocktails & Cold Brews <span class="accent-gold">🍺</span></div>
+          <div class="ticker-separator">★</div>
+          
+          <div class="ticker-item"><span class="accent-gold">🦘</span> Aussie & Kiwi Sports and Cocktail Bar <span class="accent-gold">🥝</span></div>
+          <div class="ticker-separator">★</div>
+          <div class="ticker-item"><span class="accent-red">🏉</span> Live AFL & NRL Screenings <span class="accent-red">⚽</span></div>
+          <div class="ticker-separator">★</div>
+          <div class="ticker-item"><span class="accent-gold">🍹</span> Crafted Cocktails & Cold Brews <span class="accent-gold">🍺</span></div>
+          <div class="ticker-separator">★</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bento Grid Section -->
+    
+    <!-- FIFA World Cup Matches Section -->
+    <section class="fifa-section" id="fifa-schedule">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <div class="fifa-badge">
+            <span class="pulse-dot"></span>
+            <span class="badge-text">LIVE SCREENINGS</span>
+          </div>
+          <h2 class="section-title">FIFA WORLD CUP 2026</h2>
+          <p class="section-subtitle">Catch every match live at DUBKL with stadium sound, ice-cold beers, and food promos!</p>
+        </div>
+
+        <div class="fifa-content-grid">
+          <!-- Left Side: Special Event Feature & Info -->
+          <div class="fifa-info-card">
+            <div class="fifa-logo-container">
+              <img src="/images/fifa_logo.png" alt="FIFA World Cup 2026 Logo" class="fifa-logo-img">
+            </div>
+            <div class="fifa-excerpt">
+              <h3>THE WORLD IS COMING TO DUBKL!</h3>
+              <p>Get ready for the ultimate football spectacle. Downunder Bar KL is your premium arena for the FIFA World Cup 2026. We are live streaming the games on our giant HD screens with full stadium audio, roaring crowd vibes, and cold drafts flowing.</p>
+              <p class="fifa-perks">
+                <span>🍻 <strong>Full Match Audio</strong> on all live matches</span><br>
+                <span>🍔 <strong>Ice Cold Beers</strong> & Backyard Food Promos</span><br>
+                <span>🏆 <strong>Changkat's Best Atmosphere</strong> for fans of all nations</span>
+              </p>
+              <div class="fifa-actions">
+                <a href="#contact" class="btn-primary">Book Prime Seating</a>
+                <span class="fifa-contact-info">Call +60 12 936 1513</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side: Fixtures Poster Flyer -->
+          <div class="fifa-flyer-card">
+            <div class="flyer-img-wrap cursor-zoom" id="fifa-flyer-trigger">
+              <img src="/images/fifa_schedule.jpg" alt="DUBKL FIFA World Cup 2026 Match Day Fixtures" class="fifa-flyer-img">
+              <div class="flyer-zoom-overlay">
+                <span class="zoom-icon">🔍 Click to Expand Schedule</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Responsive Schedule Table -->
+        <div class="fifa-table-wrapper">
+          <div class="table-header">
+            <h3>📅 DUBKL MATCH FIXTURES SCHEDULE</h3>
+            <div class="table-search">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="fifa-table-search" placeholder="Search by team (e.g. Australia)...">
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="fifa-table" id="fixtures-table">
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Date</th>
+                  <th>Matchup</th>
+                  <th>Time (MYT)</th>
+                  <th>Screening</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="fixture-row">
+                  <td class="day-cell">SUN</td>
+                  <td class="date-cell">14 JUN</td>
+                  <td class="matchup-cell"><span class="team-australia">🇦🇺 AUSTRALIA vs TÜRKIYE 🇹🇷</span></td>
+                  <td class="time-cell">12:00 PM</td>
+                  <td><span class="status-badge live">LIVE</span></td>
+                </tr>
+                <tr class="fixture-row">
+                  <td class="day-cell">MON</td>
+                  <td class="date-cell">15 JUN</td>
+                  <td class="matchup-cell">🇩🇪 GERMANY vs CURAÇAO 🇨🇼</td>
+                  <td class="time-cell">1:00 AM</td>
+                  <td><span class="status-badge live">LIVE</span></td>
+                </tr>
+                <tr class="fixture-row">
+                  <td class="day-cell">TUE</td>
+                  <td class="date-cell">16 JUN</td>
+                  <td class="matchup-cell">🇪🇸 SPAIN vs CAPE VERDE 🇨🇻</td>
+                  <td class="time-cell">12:00 PM</td>
+                  <td><span class="status-badge live">LIVE</span></td>
+                </tr>
+                <tr class="fixture-row">
+                  <td class="day-cell">WED</td>
+                  <td class="date-cell">17 JUN</td>
+                  <td class="matchup-cell">🇦🇹 AUSTRIA vs JORDAN 🇯🇴</td>
+                  <td class="time-cell">12:00 PM</td>
+                  <td><span class="status-badge live">LIVE</span></td>
+                </tr>
+                <tr class="fixture-row">
+                  <td class="day-cell">THU</td>
+                  <td class="date-cell">18 JUN</td>
+                  <td class="matchup-cell">🇵🇹 PORTUGAL vs CONGO DR 🇨🇩</td>
+                  <td class="time-cell">1:00 AM</td>
+                  <td><span class="status-badge live">LIVE</span></td>
+                </tr>
+                <tr class="fixture-row">
+                  <td class="day-cell">FRI</td>
+                  <td class="date-cell">19 JUN</td>
+                  <td class="matchup-cell">🇨🇿 CZECHIA vs SOUTH AFRICA 🇿🇦</td>
+                  <td class="time-cell">12:00 PM</td>
+                  <td><span class="status-badge live">LIVE</span></td>
+                </tr>
+                <tr class="fixture-row">
+                  <td class="day-cell">SUN</td>
+                  <td class="date-cell">21 JUN</td>
+                  <td class="matchup-cell">🇳🇱 NETHERLANDS vs SWEDEN 🇸🇪</td>
+                  <td class="time-cell">1:00 AM</td>
+                  <td><span class="status-badge live">LIVE</span></td>
+                </tr>
+                <tr class="fixture-row">
+                  <td class="day-cell">SUN</td>
+                  <td class="date-cell">21 JUN</td>
+                  <td class="matchup-cell">🇹🇳 TUNISIA vs JAPAN 🇯🇵</td>
+                  <td class="time-cell">12:00 PM</td>
+                  <td><span class="status-badge live">LIVE</span></td>
+                </tr>
+                <tr class="fixture-row">
+                  <td class="day-cell">MON</td>
+                  <td class="date-cell">22 JUN</td>
+                  <td class="matchup-cell">🇪🇸 SPAIN vs SAUDI ARABIA 🇸🇦</td>
+                  <td class="time-cell">12:00 PM</td>
+                  <td><span class="status-badge live">LIVE</span></td>
+                </tr>
+                <tr class="fixture-row">
+                  <td class="day-cell">TUE</td>
+                  <td class="date-cell">23 JUN</td>
+                  <td class="matchup-cell">🇦🇷 ARGENTINA vs AUSTRIA 🇦🇹</td>
+                  <td class="time-cell">1:00 AM</td>
+                  <td><span class="status-badge live">LIVE</span></td>
+                </tr>
+                <tr class="fixture-row">
+                  <td class="day-cell">WED</td>
+                  <td class="date-cell">24 JUN</td>
+                  <td class="matchup-cell">🇵🇹 PORTUGAL vs UZBEKISTAN 🇺🇿</td>
+                  <td class="time-cell">1:00 AM</td>
+                  <td><span class="status-badge live">LIVE</span></td>
+                </tr>
+                <tr class="fixture-row">
+                  <td class="day-cell">FRI</td>
+                  <td class="date-cell">26 JUN</td>
+                  <td class="matchup-cell">🇵🇾 PARAGUAY vs AUSTRALIA 🇦🇺</td>
+                  <td class="time-cell">10:00 AM</td>
+                  <td><span class="status-badge live">LIVE</span></td>
+                </tr>
+                <tr class="fixture-row">
+                  <td class="day-cell">SAT</td>
+                  <td class="date-cell">27 JUN</td>
+                  <td class="matchup-cell">🇳🇿 NEW ZEALAND vs BELGIUM 🇧🇪</td>
+                  <td class="time-cell">11:00 AM</td>
+                  <td><span class="status-badge live">LIVE</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotions Section -->
+    <section class="promotions-section" id="promotions">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <h2 class="section-title">FOOD & DRINK PROMOTIONS</h2>
+          <p class="section-subtitle">Premium tucker and ice-cold drafts straight from the taps.</p>
+        </div>
+        
+        <!-- Special Poster Promos Carousel Row -->
+        <div class="promo-carousel-wrapper">
+          <div class="promo-carousel-container" id="promo-carousel">
+            <!-- Slide 1: Cocktail Double -->
+            <div class="promo-carousel-slide">
+              <div class="promo-card cocktail-poster-card">
+                <img src="/images/promo_cocktail_double.jpg" alt="DUBKL Cocktail Double Promo" class="cocktail-poster-img">
+              </div>
+            </div>
+
+            <!-- Slide 2: Cocktail Triple -->
+            <div class="promo-carousel-slide">
+              <div class="promo-card cocktail-poster-card">
+                <img src="/images/promo_cocktail_triple.jpg" alt="DUBKL Cocktail Triple Promo" class="cocktail-poster-img">
+              </div>
+            </div>
+
+            <!-- Slide 3: Better Than Bunnings -->
+            <div class="promo-carousel-slide">
+              <div class="promo-card cocktail-poster-card">
+                <img src="/images/promo_bunnings.jpg" alt="DUBKL Better Than Bunnings Promo" class="cocktail-poster-img">
+              </div>
+            </div>
+
+            <!-- Slide 4: Pie & Chups -->
+            <div class="promo-carousel-slide">
+              <div class="promo-card cocktail-poster-card">
+                <img src="/images/promo_pie.jpg" alt="DUBKL Pie & Chups Promo" class="cocktail-poster-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button class="promo-carousel-btn prev-btn" id="promo-prev-btn" aria-label="Previous Slide">❮</button>
+          <button class="promo-carousel-btn next-btn" id="promo-next-btn" aria-label="Next Slide">❯</button>
+
+          <!-- Carousel Dots -->
+          <div class="promo-carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+
+        <div class="promotions-grid">
+          <!-- Food Promotion Card -->
+          <div class="promo-card tucker-promo">
+            <div class="tucker-content-wrap">
+              <div class="tucker-text">
+                <span class="tucker-tag">THE TUCKER SPECIAL</span>
+                <h3 class="tucker-title" id="featured-promo-title">AUSSIE BURGER</h3>
+                <p class="tucker-description" id="featured-promo-desc">This beast of a burger is stacked high – double beef patties, melted cheddar, grilled pineapple, egg, crispy bacon, lettuce, tomato, and our signature smoky BBQ sauce. Accept the mountain challenge.</p>
+                <div class="tucker-price" id="featured-promo-price">RM 48.00</div>
+              </div>
+              <div class="tucker-image-wrap">
+                <img src="/images/wagyu_burger.png" alt="Aussie Wagyu Burger" class="tucker-img" id="featured-promo-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Beer List Card -->
+          <div class="promo-card beer-promo">
+            <div class="beer-header">
+              <span class="sub-label">COLD BREWS</span>
+              <h3 class="beer-title">ON TAP</h3>
+            </div>
+            <div class="taps-list" id="brews-tap-list">
+              <div class="tap-item-placeholder">Loading beers...</div>
+            </div>
+            <div class="taps-footer">
+              <span class="tap-icon">🍺</span> <strong id="tap-flow-count">12 TAPS FLOWING</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about-us">
+      <div class="section-container">
+        <div class="about-grid">
+          <!-- Left: Narrative Card -->
+          <div class="about-card story-card">
+            <span class="about-tag">OUR STORY</span>
+            <h2 class="about-title">THE DUBKL STORY</h2>
+            <p class="about-lead">
+              Bringing the authentic, laid-back pub culture of Australia and New Zealand directly to Changkat Bukit Bintang.
+            </p>
+            <p class="about-p">
+              Founded by fans of southern hemisphere hospitality, Downunder Bar KL is more than just a place to grab a drink. It's a home away from home where expats, travelers, and locals assemble for major matches, premium tucker, and legendary conversations.
+            </p>
+            <div class="about-accent-quote">
+              "Good Times. Great Drinks. Unmatched Company."
+            </div>
+          </div>
+
+          <!-- Right: Value Proposition Bento Grid -->
+          <div class="about-right-col">
+            <!-- Card 1: Sports Haven -->
+            <div class="about-card prop-card">
+              <div class="prop-icon">📺</div>
+              <div class="prop-text">
+                <h3 class="prop-title">Live Sports Haven</h3>
+                <p class="prop-desc">Dedicated stadium sound and unmatched crowd vibes so you never miss a minute of AFL, NRL, F1, or Premier League action.</p>
+              </div>
+            </div>
+
+            <!-- Card 2: Aussie & Kiwi Spirit -->
+            <div class="about-card prop-card">
+              <div class="prop-icon">🦘</div>
+              <div class="prop-text">
+                <h3 class="prop-title">Aussie & Kiwi Spirit</h3>
+                <p class="prop-desc">Friendly service, ice-cold VB, Cooper's, and classic backyard pub grubs seared fresh on the hot-plates.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Old Match Day Section Removed -->
+
+    <!-- Interactive Menu Section -->
+    <section class="menu-section" id="menu">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <h2 class="section-title">THE DUBKL MENU</h2>
+          <p class="section-subtitle">Browse our legendary food classics, ice-cold drafts, cocktails, and wines.</p>
+        </div>
+
+        <!-- Menu Filter Controls (Search + Tabs) -->
+        <div class="menu-controls-wrapper">
+          <!-- Category Selection Tabs -->
+          <div class="menu-tabs">
+            <button class="menu-tab-btn active" data-menu-category="food">
+              <span class="tab-emoji">🦘</span> Food Menu
+            </button>
+            <button class="menu-tab-btn" data-menu-category="drinks">
+              <span class="tab-emoji">🥝</span> Drinks Menu
+            </button>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="menu-search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="menu-search-input" placeholder="Search food, beer, cocktails...">
+            <button class="clear-search-btn hidden" id="btn-clear-menu-search">&times;</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Menu Container -->
+        <div class="menu-container">
+          <!-- Food Menu View -->
+          <div class="menu-view active" id="menu-view-food">
+            <div class="menu-grid" id="food-menu-grid">
+              <div class="menu-loading">Loading menu items...</div>
+            </div>
+          </div>
+
+          <!-- Drinks Menu View (Nested Sections: Tap, Cocktails, Wine) -->
+          <div class="menu-view" id="menu-view-drinks">
+            <div class="drinks-categories">
+              <!-- On Tap -->
+              <div class="drinks-subcategory-section">
+                <h3 class="subcategory-title">🍺 On Tap & Cold Brews</h3>
+                <div class="menu-grid" id="drinks-tap-grid">
+                  <!-- Dynamically rendered -->
+                </div>
+              </div>
+
+              <!-- Cocktails -->
+              <div class="drinks-subcategory-section">
+                <h3 class="subcategory-title">🍹 Craft Cocktails</h3>
+                <div class="menu-grid" id="drinks-cocktail-grid">
+                  <!-- Dynamically rendered -->
+                </div>
+              </div>
+
+              <!-- Wines -->
+              <div class="drinks-subcategory-section">
+                <h3 class="subcategory-title">🍷 Southern Wines</h3>
+                <div class="menu-grid" id="drinks-wine-grid">
+                  <!-- Dynamically rendered -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beer Showcase Section -->
+    <section class="beer-showcase-section">
+      <div class="section-container">
+        <div class="beer-showcase-grid">
+          <!-- Card 1: 1664 Bucket -->
+          <div class="beer-showcase-card">
+            <div class="beer-img-wrap">
+              <img src="/images/beer_1664_bucket.png" alt="1664 Blanc Bucket Special" class="beer-showcase-img">
+            </div>
+          </div>
+
+          <!-- Card 2: Carlsberg Bucket -->
+          <div class="beer-showcase-card">
+            <div class="beer-img-wrap">
+              <img src="/images/beer_carlsberg_bucket.png" alt="Carlsberg Smooth Bucket Special" class="beer-showcase-img">
+            </div>
+          </div>
+
+          <!-- Card 3: Connor's Stout -->
+          <div class="beer-showcase-card">
+            <div class="beer-img-wrap">
+              <img src="/images/beer_connors_glass.jpg" alt="Connor's Stout Porter" class="beer-showcase-img connors-img">
+            </div>
+          </div>
+
+          <!-- Card 4: Carlsberg Glass -->
+          <div class="beer-showcase-card">
+            <div class="beer-img-wrap">
+              <img src="/images/beer_carlsberg_glass.png" alt="Carlsberg Copenhagen Lager" class="beer-showcase-img">
+            </div>
+          </div>
+
+          <!-- Card 5: Sapporo Glass -->
+          <div class="beer-showcase-card">
+            <div class="beer-img-wrap">
+              <img src="/images/beer_sapporo_glass.png" alt="Sapporo Premium Beer" class="beer-showcase-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jam Sesh Section -->
+    <section class="jamsesh-section" id="jamsesh">
+      <div class="section-container">
+        <div class="jamsesh-box">
+          <div class="jamsesh-info">
+            <span class="jamsesh-tag">🎵 LIVE MUSIC WEDNESDAYS</span>
+            <h2 class="jamsesh-title">JAM SESH!</h2>
+            <p class="jamsesh-desc">
+              Kick back every Wednesday with smooth, soulful vibes by the one and only Joven Goce & Dave. Enjoy cocktails and towers, hearty bites, and the best live acoustic tunes in town. World-famous in the capital city, only in DownUnder Bar KL!
+            </p>
+            
+            <div class="perks-grid">
+              <div class="perk-item">
+                <span class="perk-icon">🎸</span>
+                <span class="perk-text"><strong>JOVEN GOCE & DAVE</strong> playing acoustic hits live</span>
+              </div>
+              <div class="perk-item">
+                <span class="perk-icon">🍹</span>
+                <span class="perk-text"><strong>COCKTAIL PROMOS</strong> running all night</span>
+              </div>
+              <div class="perk-item">
+                <span class="perk-icon">🎙️</span>
+                <span class="perk-text"><strong>FREE PINT</strong> for performers & open-mic singers</span>
+              </div>
+            </div>
+            
+            <!-- Mini timeline for Wednesdays -->
+            <div class="jamsesh-mini-timeline">
+              <h3 class="mini-timeline-title">WEDNESDAY LINEUP</h3>
+              <div class="timeline-item">
+                <span class="time">7:30 PM</span>
+                <div class="details">
+                  <strong>Open Mic Sign-ups & Warmups</strong>
+                  <span>Drop your name to secure your slot on the Changkat stage.</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="time">8:00 PM</span>
+                <div class="details">
+                  <strong>Acoustic Set by Joven & Dave</strong>
+                  <span>Featuring a live selection of classic acoustic tracks and requests.</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="time">10:00 PM</span>
+                <div class="details">
+                  <strong>The Open Jam</strong>
+                  <span>Stage is open for collaborative acoustic jams and requests.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Flyer Card on the Right -->
+          <div class="jamsesh-flyer-card">
+            <div class="flyer-img-wrap">
+              <img src="/images/jamsesh_flyer.jpg" alt="DUBKL Jam Sesh featuring Joven Goce & Dave" class="jamsesh-flyer-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery Grid -->
+    <section class="gallery-section" id="gallery">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <h2 class="section-title">THE ARENA GALLERY</h2>
+          <p class="section-subtitle">Catch a glimpse of the vibe, the food, and the action.</p>
+        </div>
+        
+        <div class="gallery-grid" id="website-gallery-grid">
+          <div class="gallery-item-placeholder">Loading gallery...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section" id="contact">
+      <div class="section-container">
+        <div class="contact-box">
+          
+          <!-- Contact Details (Left Column) -->
+          <div class="contact-info">
+            <h2 class="contact-title">CONTACT US</h2>
+            <p class="contact-desc">
+              Have a question, feedback, or want to book a large group event? Reach out to the squad or secure your table below.
+            </p>
+            
+            <div class="contact-details-list">
+              <div class="contact-item">
+                <span class="icon">📍</span>
+                <div class="details">
+                  <strong>Location</strong>
+                  <span>No 40, Changkat, Bukit Bintang, 51200, Kuala Lumpur</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="icon">📞</span>
+                <div class="details">
+                  <strong>Phone</strong>
+                  <span>+60 17-670 9076</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="icon">✉️</span>
+                <div class="details">
+                  <strong>Email</strong>
+                  <span>downunderbarkl@gmail.com</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="icon">🕒</span>
+                <div class="details">
+                  <strong>Operating Hours</strong>
+                  <span>Mon - Sun: 1:00 PM - 3:00 AM</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stylized Map Placeholder -->
+            <div class="map-placeholder">
+              <div class="map-overlay">
+                <span class="map-pin">📍 Downunder Bar KL</span>
+                <a href="https://maps.google.com" target="_blank" class="btn-outline btn-sm" style="border-color: #ffffff; color: #ffffff;">Get Directions</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Booking / Contact Form (Right Column) -->
+          <div class="reservation-form-container">
+            <h3 class="form-title">BOOK A TABLE</h3>
+            <p class="form-subtitle">Reservations are highly recommended for AFL, NRL, and Premier League match days.</p>
+            
+            <form id="table-booking-form" class="booking-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="guest-name">Full Name</label>
+                  <input type="text" id="guest-name" required placeholder="e.g. Rishi Prasad">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="guest-email">Email Address</label>
+                  <input type="email" id="guest-email" required placeholder="e.g. name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="guest-phone">Phone Number</label>
+                  <input type="tel" id="guest-phone" required placeholder="e.g. +6017-670-9076">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="booking-date">Date</label>
+                  <input type="date" id="booking-date" required>
+                </div>
+                <div class="form-group">
+                  <label for="booking-time">Time</label>
+                  <input type="time" id="booking-time" required>
+                </div>
+                <div class="form-group">
+                  <label for="booking-guests">Guests</label>
+                  <select id="booking-guests" required>
+                    <option value="2">2 Guests</option>
+                    <option value="4" selected>4 Guests</option>
+                    <option value="6">6 Guests</option>
+                    <option value="8">8 Guests</option>
+                    <option value="10">10+ Guests (Group)</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit" class="btn-primary btn-full" id="btn-submit-booking">Submit Reservation Request</button>
+            </form>
+            <div id="booking-result-message" class="booking-result hidden"></div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <!-- Image Lightbox Modal for Gallery -->
+  <div class="lightbox-modal hidden" id="gallery-lightbox">
+    <span class="lightbox-close" id="lightbox-close-btn">&times;</span>
+    <div class="lightbox-content-wrap">
+      <img src="" alt="" class="lightbox-image" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption-text">Caption</div>
+    </div>
+  </div>
+
+  <!-- Brand Logo Carousel Section -->
+  <div class="brand-carousel-section">
+    <div class="section-container">
+      <h4 class="brand-carousel-title">PROUDLY SERVING</h4>
+      <div class="logo-marquee-wrap">
+        <div class="logo-marquee-track">
+          <div class="logo-marquee-item"><img src="/images/logo_1664.png" alt="1664 Blanc"></div>
+          <div class="logo-marquee-item"><img src="/images/logo_sapporo.png" alt="Sapporo"></div>
+          <div class="logo-marquee-item"><img src="/images/logo_pilsner.png" alt="Danish Pilsner"></div>
+          <div class="logo-marquee-item"><img src="/images/logo_carlsberg.png" alt="Carlsberg"></div>
+          <div class="logo-marquee-item"><img src="/images/logo_union.png" alt="Union Jack Brand"></div>
+          <!-- Repeated for infinite scroll -->
+          <div class="logo-marquee-item"><img src="/images/logo_1664.png" alt="1664 Blanc"></div>
+          <div class="logo-marquee-item"><img src="/images/logo_sapporo.png" alt="Sapporo"></div>
+          <div class="logo-marquee-item"><img src="/images/logo_pilsner.png" alt="Danish Pilsner"></div>
+          <div class="logo-marquee-item"><img src="/images/logo_carlsberg.png" alt="Carlsberg"></div>
+          <div class="logo-marquee-item"><img src="/images/logo_union.png" alt="Union Jack Brand"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bar-footer">
+    <div class="section-container footer-grid">
+      <div class="footer-info">
+        <h4 class="footer-logo">Downunder Bar KL</h4>
+        <p class="footer-tagline">Precision Sports & Athletic Excellence. The premier destination for southern hemisphere sport in KL.</p>
+        <p class="copyright">&copy; 2026 Downunder Bar KL. All rights reserved.</p>
+      </div>
+      
+      <div class="footer-links-col">
+        <h5>Quick Links</h5>
+        <ul>
+        <li><a href="#fifa-schedule">FIFA Matches</a></li>
+        <li><a href="#promotions">Promotions</a></li>
+        <li><a href="#jamsesh">Jam Sesh</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="/admin">Admin Dashboard</a></li>
+      </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h5>Find Us</h5>
+        <p class="contact-detail"><span class="icon">📍</span> No 40, Changkat, Bukit Bintang, KL</p>
+        <p class="contact-detail"><span class="icon">📞</span> +60 17-670 9076</p>
+        <p class="contact-detail"><span class="icon">✉️</span> downunderbarkl@gmail.com</p>
+      </div>
+
+      <div class="footer-legal-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Bottom Navigation (Apple Style) -->
+  <nav class="floating-bottom-nav">
+    <a href="#fifa-schedule" class="nav-item">
+      <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+        <path d="M4 22h16"></path>
+        <path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34"></path>
+        <path d="M12 2a5 5 0 0 0-5 5v3c0 2.21 1.79 4 4 4s4-1.79 4-4V7a5 5 0 0 0-5-5z"></path>
+      </svg>
+      <span class="nav-label">FIFA Matches</span>
+    </a>
+    <a href="#promotions" class="nav-item">
+      <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+        <line x1="7" y1="7" x2="7.01" y2="7"></line>
+      </svg>
+      <span class="nav-label">Promotions</span>
+    </a>
+    <a href="#jamsesh" class="nav-item">
+      <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 18V5l12-2v13"></path>
+        <circle cx="6" cy="18" r="3"></circle>
+        <circle cx="18" cy="16" r="3"></circle>
+      </svg>
+      <span class="nav-label">Jam Sesh</span>
+    </a>
+    <a href="#contact" class="nav-item">
+      <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+      <span class="nav-label">Contact</span>
+    </a>
+  </nav>
+
+  <!-- App Logic -->
+  <script src="/js/app.js"></script>
+</body>
+</html>
