@@ -1,0 +1,10 @@
+{
+  "name": "downunder-bar-kl",
+  "version": "1.0.0",
+  "description": "Downunder Bar KL Website and Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}
